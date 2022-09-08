@@ -7,7 +7,7 @@ module.exports = (_, argv) => ({
   entry: './src/index',
   // mode: 'development',
   output: {
-    publicPath: argv.mode === 'development' ? 'localhost:3000' : 'https://lamiya2706.github.io/dashboard'
+    publicPath: argv.mode === 'development' ? 'localhost:3000' : 'https://mfe-dashboard-three.vercel.app/'
   },
   devServer: {
     static: {
@@ -55,9 +55,9 @@ module.exports = (_, argv) => ({
         // order: 'order@http://localhost:3002/remoteEntry.js',
         // shell: 'shell@http://localhost:3000/remoteEntry.js',
         // dashboard: 'dashboard@http://localhost:3001/remoteEntry.js',
-        order: 'order@https://lamiya2706.github.io/orders/remoteEntry.js',
-        dashboard: 'dashboard@https://lamiya2706.github.io/dashboard/remoteEntry.js',
-        shell: 'shell@https://lamiya2706.github.io/shell/remoteEntry.js',
+        order: 'order@https://mfe-dashboard-three.vercel.app/remoteEntry.js',
+        dashboard: 'dashboard@https://mfe-dashboard-three.vercel.app/remoteEntry.js',
+        shell: 'shell@https://mfe-dashboard-three.vercel.app/remoteEntry.js',
       },
       exposes: {
         './DashboardService': './src/DashboardService',
